@@ -268,29 +268,26 @@ with st.sidebar:
 # HERO
 # ============================================================
 
-st.markdown(
-    """
-    <div class="hero">
+st.html("""
+<div class="hero">
 
-        <div class="hero-badge">
-            🎓 MACHINE LEARNING • STUDENT ANALYTICS
-        </div>
-
-        <h1>
-            Predict Student
-            <span>Performance</span>
-        </h1>
-
-        <p>
-            Estimate a student's Mathematics Score using
-            demographic information, academic performance,
-            parental education, lunch type and test preparation.
-        </p>
-
+    <div class="hero-badge">
+        🎓 MACHINE LEARNING • STUDENT ANALYTICS
     </div>
-    """,
-    unsafe_allow_html=True
-)
+
+    <h1>
+        Predict Student
+        <span>Performance</span>
+    </h1>
+
+    <p>
+        Estimate a student's Mathematics Score using
+        demographic information, academic performance,
+        parental education, lunch type and test preparation.
+    </p>
+
+</div>
+""")
 
 
 # ============================================================
@@ -298,60 +295,31 @@ st.markdown(
 # ============================================================
 
 info1, info2, info3 = st.columns(3)
+info1, info2, info3 = st.columns(3)
 
 with info1:
-
-    st.markdown(
-        """
-        <div class="info-card">
-
+    st.html("""
+    <div class="info-card">
         <h4>🎯 Target</h4>
-
-        <p>
-        Mathematics Score
-        </p>
-
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
-
+        <p>Mathematics Score</p>
+    </div>
+    """)
 
 with info2:
-
-    st.markdown(
-        """
-        <div class="info-card">
-
+    st.html("""
+    <div class="info-card">
         <h4>📚 Inputs</h4>
-
-        <p>
-        Academic + demographic factors
-        </p>
-
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
-
+        <p>Academic + demographic factors</p>
+    </div>
+    """)
 
 with info3:
-
-    st.markdown(
-        """
-        <div class="info-card">
-
+    st.html("""
+    <div class="info-card">
         <h4>⚙️ Pipeline</h4>
-
-        <p>
-        Encoding + scaling + regression
-        </p>
-
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
-
+        <p>Encoding + scaling + regression</p>
+    </div>
+    """)
 
 st.markdown("")
 
@@ -522,26 +490,23 @@ if predict:
         # RESULT
         # ----------------------------------------------------
 
-        st.markdown(
-            f"""
+        st.html(f"""
             <div class="result-card">
-
+            
                 <div class="result-title">
                     Predicted Mathematics Score
                 </div>
-
+            
                 <div class="result-score">
                     {prediction:.2f}
                 </div>
-
+            
                 <div class="result-label">
                     out of 100
                 </div>
-
+            
             </div>
-            """,
-            unsafe_allow_html=True
-        )
+            """)
 
         # ----------------------------------------------------
         # SCORE METRIC
