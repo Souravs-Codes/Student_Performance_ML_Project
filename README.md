@@ -10,7 +10,7 @@ The project demonstrates a complete Machine Learning workflow, from data ingesti
 
 🚀 **Try the application here:**
 
-👉 Add your Streamlit deployment URL here
+https://studentperformancemlproject-nxywxpfpxubhmguexa6vci.streamlit.app/
 
 The application provides an interactive interface where users can enter student information and receive a predicted Mathematics Score in real time.
 
